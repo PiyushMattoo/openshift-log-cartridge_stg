@@ -1,0 +1,47 @@
+Name: logstash
+Cartridge-Short-Name: LOGSTASH
+Architecture: noarch
+Display-Name: Doradus Logstash 0.1.1
+Description: "The doradus logstash cartridge allows you to start a customized version of logstash which can be used to stream, collect all the logs from OPENSHIFT_LOG_DIR (in a pre-defined format) into Doradus. The Cartridge monitors the OPENSHIFT_LOG_DIR, tailing the log files, queueing up batches of records and when it either reaches the max batch size or when the max idle time has elapsed the cartridge would then write log events to Doradus for enhanced performance reasons"
+Version: '1.5.0'
+Versions: ['1.5.0']
+Cartridge-Version: 0.1.1
+Cartridge-Vendor: dell
+License: Apache 2
+Categories:
+ - embedded
+ - plugin
+ - logstash
+Website: https://stash.kace.com/projects/BD/repos/openshift-logstash-cartridge/browse
+Source-Url: https://piyush_mattoo@stash.kace.com/scm/bd/openshift-logstash-cartridge.git
+Help-Topics:
+  "Developer Center": https://www.elastic.co/blog/logstash-1-5-0-beta1-released
+Cart-Data:
+  - Key: "OPENSHIFT_DORADUS_HOST"
+    Type: environment
+    Description: "Host for doradus database"
+  - Key: "OPENSHIFT_DORADUS_PORT"
+    Type: environment
+    Description: "Port for doradus database"
+  - Key: "OPENSHIFT_DORADUS_TENANT"
+    Type: environment
+    Description: "Doradus Tenant"
+  - Key: "OPENSHIFT_DORADUS_USER"
+    Type: environment
+    Description: "Tenant User"
+  - Key: "OPENSHIFT_DORADUS_PWD"
+    Type: environment
+    Description: "Tenant Password"	
+Provides:
+ - logstash
+Scaling:
+  Min: 1
+  Max: -1
+Group-Overrides:
+- components:
+  - logstash
+  - web_framework
+  
+  
+
+
