@@ -12,8 +12,8 @@ Categories:
  - embedded
  - plugin
  - logstash
-Website: https://stash.kace.com/projects/BD/repos/openshift-logstash-cartridge/browse
-Source-Url: https://piyush_mattoo@stash.kace.com/scm/bd/openshift-logstash-cartridge.git
+Website: https://github.com/PiyushMattoo/openshift-log-cartridge_stg
+Source-Url: https://github.com/PiyushMattoo/openshift-log-cartridge_stg.git
 Help-Topics:
   "Developer Center": https://www.elastic.co/blog/logstash-1-5-0-beta1-released
 Cart-Data:

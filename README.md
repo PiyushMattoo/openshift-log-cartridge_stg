@@ -23,7 +23,7 @@ First, configure the application with the appropriate environment variables. The
 	  OPENSHIFT_DORADUS_USER=lucille OPENSHIFT_DORADUS_PWD=agnes -a my-app
 
     # Add cartridge
-    $ rhc cartridge add -a your-app-name https://git.labs.dell.com/projects/BD/repos/openshift-logstash-cartridge/browse/metadata/manifest.yml?raw
+    $ rhc cartridge add -a your-app-name https://raw.githubusercontent.com/PiyushMattoo/openshift-log-cartridge_stg/master/metadata/manifest.yml
 
 ## Usage
 
